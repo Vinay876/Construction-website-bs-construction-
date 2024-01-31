@@ -3,25 +3,20 @@ import ServicesData from "../constants/Services";
 export default function Services() {
   return (
     <>
-      <div>
-        <h1 className=" text-[#095aab] text-center font-bold text-[4rem] py-4 ">
+      <div className="my-8 md:my-10">
+        <h1 className=" text-[#095aab] text-center font-bold text-[4rem] py-4 underline ">
           Our Services
         </h1>
-        <p className="text-black text-lg text-center">
-          At Delta Tooling Solution we Offer the followng services to augment
-          your machining needs
-        </p>
-        <div className="w-11/12  mx-auto   p-4 md:p-0">
+        <div className="w-[97%] mx-auto p-4 md:p-0">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {ServicesData.map((item, index) => (
-              <>
                 <div
                   className="p-1 mt-6 hover:bg-blue-300 hover:text-white delay-150 ease-in-out transition-all cursor-pointer"
                   key={index}
                 >
                   <div className=" p-6 ">
                     <div
-                      className="w-full h-[200px]"
+                      className="w-full h-[200px] rounded-xl"
                       style={{
                         backgroundImage: `url(${item.image})`,
                         backgroundSize: "cover",
@@ -29,7 +24,7 @@ export default function Services() {
                         backgroundRepeat: "no-repeat",
                       }}
                     ></div>
-                    <div className="mt-2 text-[#0368ab] font-sans-serif text-[18px] font-medium">
+                    <div className="mt-2 text-[#0368ab]  text-[18px] font-semibold">
                       {item.title}
                     </div>
 
@@ -38,7 +33,6 @@ export default function Services() {
                     </div>
                   </div>
                 </div>
-              </>
             ))}
           </div>
         </div>

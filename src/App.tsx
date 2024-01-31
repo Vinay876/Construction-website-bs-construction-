@@ -8,6 +8,7 @@ import VideoGallery from "./components/VideoGallery";
 function App() {
   return (
     <>
+    
       <Navbar />
       <About />
       <Services />

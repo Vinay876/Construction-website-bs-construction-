@@ -5,7 +5,7 @@ const HeaderOptions = [
   },
   {
     title: "About Us",
-    url: "#about",
+    url: "/about",
   },
   {
     title: "Services",

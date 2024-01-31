@@ -53,12 +53,13 @@ export default function Navbar() {
             <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 {HeaderOptions.map((item, index) => {
+                  const currentPage = window.location.pathname;
                   return (
-                    <li className="nav-item styler px-2 mx-2" key={index}>
+                    <li className={`nav-item px-2 mx-2 ${currentPage === item.url ?'selected':'styler'}`} key={index}>
                       <a
                         className="nav-link "
                         aria-current="page"
-                        href={`/shop=${item.url}`}
+                        href={`${item.url}`}
                       >
                         {item.title}
                       </a>

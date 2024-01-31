@@ -17,3 +17,8 @@ input[type=number] {
 .scroll-hide::-webkit-scrollbar {
     display: none;
 }
+
+.drop{
+    margin-top: 12px;
+    color: #0368ab;
+}
